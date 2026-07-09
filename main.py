@@ -183,21 +183,21 @@ def iniciar_jogo():
     b_jogar.destroy()
 
     # importando os botoes
-    icon_1 = Image.open('pedra, papel, tesoura/imagens/pedra.png')
+    icon_1 = Image.open('imagens/pedra.png')
     icon_1 = icon_1.resize((50,50), Image.Resampling.LANCZOS)
     icon_1 = ImageTk.PhotoImage(icon_1)
     b_icon1 = Button(Frame_baixo, command=lambda:jogar('pedra'), width=50, image=icon_1, compound=CENTER, bg=co0, fg=co0, font=('Ivy 10 bold'), anchor=CENTER, relief=FLAT)
     b_icon1.place(x=15, y=60)
 
 
-    icon_2 = Image.open('pedra, papel, tesoura/imagens/papel.png')
+    icon_2 = Image.open('imagens/papel.png')
     icon_2 = icon_2.resize((50,50), Image.Resampling.LANCZOS)
     icon_2 = ImageTk.PhotoImage(icon_2)
     b_icon2 = Button(Frame_baixo, command=lambda:jogar('papel'), width=50, image=icon_2, compound=CENTER, bg=co0, fg=co0, font=('Ivy 10 bold'), anchor=CENTER, relief=FLAT)
     b_icon2.place(x=95, y=60)
 
 
-    icon_3 = Image.open('pedra, papel, tesoura/imagens/tesoura.png')
+    icon_3 = Image.open('imagens/tesoura.png')
     icon_3 = icon_3.resize((50,50), Image.Resampling.LANCZOS)
     icon_3 = ImageTk.PhotoImage(icon_3)
     b_icon3 = Button(Frame_baixo, command=lambda:jogar('tesoura'), width=50, image=icon_3, compound=CENTER, bg=co0, fg=co0, font=('Ivy 10 bold'), anchor=CENTER, relief=FLAT)
